@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UFV, CIS-145, Professor Lili Saghafi, Term project">
+  <meta name="keywords" content="HTML, CSS, Electronic Shop, Laptops, Phones, Accessories">
+  <meta name="author" content="Harshpreet Bajwa">
+    <title>Electro Shop</title>
+                                                          <!--Title above-->
+  </head>
+  <style>
+
+                                                  /*navigation bar and badground image*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(pic1.jpg);      /*Header back img*/
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: poppins;
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{                                                         /*Code for logo*/
+    float: left;
+}
+.logo img{
+    width: 40%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+.welcome-text a{
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+}
+.welcome-text a:hover{
+    background: #fff;
+    color: #333;
+}
+.about-area,.port-area{
+    position: left;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 500px;
+}
+.text-part{
+
+    font-size: 150%;
+    text-align: center;
+    color: blue;
+    width: 65%;
+    height: 80%;
+}   
+.port-area{
+    background-image: url("onlinelogomaker-111820-1814-3433.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+} 
+                                                    /*Available product section code*/
+
+.scroll{
+        margin:2% 0%;
+        width:800px;
+        overflow-x: auto;
+        overflow-y: hidden;
+     } 
+      .scroll-text-1{
+position: center;
+     }
+     
+     @media screen and (max-width: 900px) {
+       .scroll{
+          width: 400px;
+         text-align: center;
+       }
+     } 
+
+                                    
+                                       
+                                                   /*footer*/
+*{
+  margin: 0;
+  padding: 0;
+  color: #0e0d0d;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #c53333;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #b63737;
+}
+footer{                                                 
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(145, 202, 240);
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{                                       
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: rgb(145, 202, 240);
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: rgb(145, 202, 240);
+  top: -10px;
+}
+.left .content p{                                                /*footer code continues*/
+  text-align: justify;
+}
+
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #443f3f;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #faf8f8;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: 1px solid #222222;
+  outline: none;
+  background: #faf8f8;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background:rgb(145, 202, 240);
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: rgb(145, 202, 240);
+}/*
+.bottom center span{
+  color: #141414;
+}
+.bottom center a{                           Exrta code for editing
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}*/
+@media screen and (max-width: 900px) {                      /*Media for footer*/
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+                                      /*navigation bar code came here by mistake*/
+
+@media (max-width:900px){
+    .wrapper {
+width: 100%;
+}
+.logo {                                                /*Media for nav bar*/
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+img {
+width: 20% ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {                                                             /*CSS ends*/
+font-size: 30px;
+}
+
+}
+  </style>
+  <body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img src="onlinelogomaker-111820-1814-3433.png" alt="logo of Shop">        <!--Logo of shop-->
+            </div>
+    <ul class="nav-area">
+    <li><a href="#">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="Registration Form.html">Register here</a></li>
+    <li><a href="Contact Us.html">Contact Us</a></li>
+    </ul>
+        <div class="welcome-text">
+            <h1>
+    Electro Shop</h1>
+    <input type="text" placeholder="Search on this Site">
+                                                             <!--Search bar code above-->
+             </div>
+        </div>
+    </header>
+                                                                <!-- Main Body Starts from here--> 
+    <section class="port-area">
+        <div class="text-part">
+            <h1 style="padding: 3% 25%;">
+           About Us </h1>                                                <!--About US section-->
+    <p>
+      We are one of the emerging electronic shops in Canada. Since 2000 we are selling top products in Canada that include Laptops, Phones, and other accessories. 
+      To know more about us <a href="About Us.html"> click here.</a> </p>
+    </div>
+    </section>
+    <h2 style="text-align: center;">
+    Available Products
+    </h2>
+    <center>
+      <div class="scroll">
+         <div class="scroll-text-1">
+          <h2>  Laptops  &emsp;      Phones &emsp;  Accessories  </h2>              <!--Headings-->
+        </div> 
+                                                                   <!--Links for Products pages on images-->
+          <a href="Laptops Page.html"><img src="laptop.jpg" width="250px" height="200px" alt="Laptop Image"></a> 
+          <a href="Phones.html"><img src="phone.jpg" width="250px" height="200px" alt="Phone Image"></a> 
+          <a href="Accessories.html"><img src="accessories.jpg" width="250px" height="200px" alt="Accessories Image"></a> 
+      </div>
+   </center>
+    
+                                                                <!--Fotter-->
+  <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2>
+  About us</h2>                                        <!--About Us Section Of fotter-->
+  <div class="content">
+              <p>
+                We are one of the emerging electronic shops in Canada. Since 2000 we are selling top products in Canada that include Laptops, Phones, and other accessories.
+               To know more about us <a href="About Us.html">click here.</a></p>
+  <img src="iconfinder_3_Accessible_logo_logos_4373060.png" alt="Accessibility Logo" style="height: 5%; width: 6%;">
+</div>
+  </div>
+  <div class="center box">                               <!-- Center column of fotter-->
+            <h2>
+  Address</h2>
+  <div class="content">
+              <div class="place">
+                
+                <span class="text">Abbotsford,BC,Canada</span> <!--Address of Shop-->
+              </div>
+  <div class="phone">
+                
+                <span class="text">+1 (xyz)234-5678</span>
+              </div>
+  <div class="email">
+                
+                <span class="text"><a href="mailto:harshsinghbajwa1407@gmail.com">harshsinghbajwa1407@gmail.com</a></span>         <!--Email-->
+              </div>
+  </div>
+  </div>
+  <div class="right box">
+            <h2>
+  Contact us</h2>                                         <!--Short Contact Us form-->
+  <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">
+  Email *</div>
+  <input type="email" required>                      <!--Email box-->
+                </div>
+  <div class="msg">
+                  <div class="text">                        <!--Message-->
+  Message *</div>
+    <changeit id=".msgForm" rows="2" cols="25" required></changeit> <!-- replace this changeit name to textarea if required -->
+                
+                <br />
+  <div class="btn">
+  <button type="submit">Send</button>                     <!--Send button-->
+                </div>
+  <div class="bottom">                                   <!--Disclaimer-->
+          <center>
+            This is a project of CIS 145 , Web Publishing Course in UFV, Instructed and
+              requested by Professor Lili Saghafi
+              
+          </center>
+  </div>
+     
+    </body>
+</html>

@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="UFV, CIS-145, Professor Lili Saghafi, Term project">
+  <meta name="keywords" content="HTML, CSS, Electronic Shop, Laptops, Phones, Accessories">
+  <meta name="author" content="Harshpreet Bajwa">
+    <title> Contact Us </title>
+                                              <!--Title above-->
+  </head>
+  <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  background: url("contact\ us\ form\ back.jpg") no-repeat center center;   /*Back image*/
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.wrapper{
+  max-width: 720px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 0 10px;
+}
+
+.wrapper h2{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.wrapper .form .form_container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.wrapper .form .form_container .form_left,
+.wrapper .form .form_container .form_right{
+  width: 48%;
+}
+
+.wrapper .form .input_field input[type="text"],
+.wrapper .form textarea{
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.wrapper .form textarea{
+  height: 90%;
+  resize: none;
+}
+
+.wrapper .form .btn{
+  width: 200px;
+  background: #5fbcf1;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.wrapper .form .btn a{
+  color: #fff;
+}
+
+@media screen and (max-width: 460px){                    /*Media for form*/
+  .wrapper .form .form_container{
+    flex-direction: column;
+  }
+  .wrapper .form .form_container .form_left,
+  .wrapper .form .form_container .form_right{
+    width: 100%;
+  }
+  .wrapper .form textarea{
+    height: 100px;
+  }
+}
+
+
+  </style>
+  <body>
+    <div class="wrapper">
+        <h2>contact us</h2>
+        <div class="form">
+          <div class="form_container">
+            <div class="form_left">
+            <div class="input_field">
+              <input type="text" placeholder="Your Name*"><!--Placeholder 1-->
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Your Email*"><!--Placeholder 2-->
+            </div>
+            <div class="input_field">
+              <input type="text" placeholder="Your Phone*"><!--Placeholder 3-->
+            </div>
+          </div>
+          <div class="form_right">
+            <textarea placeholder="Your Message*"></textarea><!--Placeholder 4-->
+          </div>
+          </div>
+          <div class="btn">
+            <a href="#">Send Message</a><!--Button-->
+          </div>
+        </div>
+      </div>  
+  </body>
+</html>

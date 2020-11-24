@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="UFV, CIS-145, Professor Lili Saghafi, Term project">
+  <meta name="keywords" content="HTML, CSS, Electronic Shop, Laptops, Phones, Accessories">
+  <meta name="author" content="Harshpreet Bajwa">
+  <title>Phones</title>
+  </head>
+<style>
+                                       /* Nav bar*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
+header{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(back\ for\ pho\ pg.jpg);/*Back img of header*/
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li{
+    display: inline-block;
+}
+.nav-area li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 20px;
+font-family: poppins;
+font-size: 16px;
+text-transform: uppercase;
+}
+.nav-area li a:hover{
+    background: #fff;
+    color: #333;
+}
+.logo{
+    float: left;
+}
+.logo img{
+    width: 40%;
+    padding: 15px 0;
+}
+.welcome-text{
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    margin: 20% 30%;
+    text-align: center;
+}
+.welcome-text h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+                                            /*
+                                              Media Quiery For Nav Bar*/
+@media (max-width:900px){
+    .wrapper {
+width: 100%;
+}
+.logo {
+float: none;
+width: 50%;
+text-align: center;
+margin: auto;
+}
+img {
+width: 20% ;
+}
+.nav-area {
+float: none;
+margin-top: 0;
+}
+    .nav-area li a {
+padding: 5px;
+font-size: 11px;
+}
+.nav-area {
+text-align: center;
+}
+    .welcome-text {
+width: 100%;
+height: auto;
+margin: 30% 0;
+}
+    .welcome-text h1 {
+font-size: 30px;
+}
+}
+/*Code for Laptops*/
+#l-img-r-txt,
+    #l-txt-r-img {
+        display: flex;
+    }
+
+.l-img-r-txt_img {
+        height: 300px;
+        width: 100%;
+        display: inline-block;
+        background: url("phone\ 1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .l-img-r-txt_txt {
+        height: auto;
+        width: 100%;
+        display: inline-block;
+                      /*add here for background color*/
+    }
+    #gradient1,#gradient2{
+      background-image: linear-gradient(grey,white)
+    }
+
+    .l-txt-r-img-img {
+        height: 300px;
+        width: 100%;
+        display: inline-block;
+        background: url("phone2.jpg"); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .l-txt-r-img-txt {
+        height: auto;
+        width: 100%;
+        display: inline-block;
+        
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .l-img-r-txt_img {
+            height: 300px;
+            width: 50%;
+            float: left;
+        }
+
+        .l-img-r-txt_txt {
+            height: 300px;
+            width: 50%;
+            float: right;
+        }
+
+        .l-txt-r-img-img {
+            height: 300px;
+            width: 50%;
+            float: right;
+        }
+
+        .l-txt-r-img-txt {
+            height: 300px;
+            width: 50%;
+            float: left;
+        }
+    }
+
+#l-img-r-txt,
+    #l-txt-r-img {
+        display: flow-root;
+    }
+                                              /*footer*/
+ 
+*{
+  margin: 0;
+  padding: 0;
+  color: #0e0d0d;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.content1{
+  position: relative;
+  margin: 130px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #c53333;
+}
+.content1 .p{
+  font-size: 2.1875rem;
+  font-weight: 600;
+  color: #b63737;
+}
+footer{
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: rgb(145, 202, 240);
+}
+.main-content{
+  display: flex;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.box .content:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: rgb(145, 202, 240);
+}
+.box .content:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 15%;
+  background: rgb(145, 202, 240);
+  top: -10px;
+}
+.left .content p{
+  text-align: justify;
+}
+                                           /* Footer code continues*/
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.right form .text{
+  font-size: 1.0625rem;
+  margin-bottom: 2px;
+  color: #443f3f;
+}
+.right form .msg{
+  margin-top: 10px;
+}
+.right form input, .right form .msgForm{
+  width: 100%;
+  font-size: 1.0625rem;
+  background: #faf8f8;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+.right form input:focus,
+.right form .msgForm:focus{
+  outline-color: #3498db;
+}
+.right form input{
+  height: 35px;
+}
+.right form .btn{
+  margin-top: 10px;
+}
+.right form .btn button{
+  height: 40px;
+  width: 100%;
+  border: 1px solid #222222;
+  outline: none;
+  background: #faf8f8;
+  font-size: 1.0625rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: .3s;
+}
+.right form .btn button:hover{
+  background:rgb(145, 202, 240);
+}
+.bottom center{
+  padding: 5px;
+  font-size: 0.9375rem;
+  background: rgb(145, 202, 240);
+}/*
+.bottom center span{
+  color: #141414;
+}
+.bottom center a{                           Exrta code for editing
+  color: #f12020;
+  text-decoration: none;
+}
+.bottom center a:hover{
+  text-decoration: underline;
+}*/
+@media screen and (max-width: 900px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+
+
+</style>
+
+<body>
+  <header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="onlinelogomaker-111820-1814-3433.png" alt="logo of Shop">
+        </div>
+<ul class="nav-area">                                           <!--Nav links-->
+<li><a href="Main Page.html">Home</a></li>
+<li><a href="About Us.html">About Us</a></li>
+<li><a href="Registration Form.html">Register here</a></li>
+<li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+<div class="welcome-text">
+  <h1>
+Phones Here</h1>
+
+   </div>
+</div>
+</header>
+                                                  <!-- Laptop1-->
+<div id="l-img-r-txt">
+  <div class="l-img-r-txt_img">
+      
+  </div>
+  <div class="l-img-r-txt_txt" id="gradient1">
+
+     <h3 style="text-align: center;"> iPhone 11</h3><br>
+     Display  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Liquid Retina HD display<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;&emsp;&emsp;6.1‑inch (diagonal) all-screen LCD <br> 
+<br> Camera   &emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;              Dual 12MP Ultra Wide and Wide cameras                    <br>
+<br> Battery and <br> Power  &emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp; Up to 17 hours and Fast‑charge capable<br>
+<br>Operating System   &emsp;&emsp;&emsp;&emsp;&nbsp;    iOS 14<br>
+<br>Storage  &emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;     64GB,256GB<br>
+<br><a href="Registration Form.html"><button type="button" style="margin-left: 45%; padding:5px 5px 5px 5px;"> Buy Now </a></button><br>
+<br>
+
+    </div>
+  </div>
+                                                    <!--Laptop 2-->
+
+<div id="l-txt-r-img">
+  <div class="l-txt-r-img-img">
+      
+  </div>
+  <div class="l-txt-r-img-txt" id="gradient2">
+
+     <h3 style="text-align: center;">Galaxy Note9</h3> <br>
+     Display  &emsp;&emsp;&emsp;&emsp; 6.4" Quad HD+  <br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; Default resolution is Full HD+ and can be changed to Quad HD+.<br>
+<br> Camera   &emsp;&emsp;&emsp;&nbsp;&nbsp;           Dual 12MP Ultra Wide and Wide cameras          <br>
+<br> Battery and <br> Power  &emsp;&emsp;&emsp;&emsp;&nbsp; Battery capacity: 4000mAh<br>
+<br>Memory   &emsp;&emsp;&emsp;&nbsp;    8GB RAM<br>
+<br>Storage  &emsp;&emsp;&emsp;&nbsp;&nbsp;     512GB<br>
+<br><a href="Registration Form.html"><button type="button" style="margin-left: 45%; padding:5px 5px 5px 5px;"> Buy Now</button></a><br>
+<br>
+  </div>
+</div>
+                                                      <!-- Footer-->
+
+<footer>
+  <div class="main-content">
+    <div class="left box">
+      <h2>
+About us</h2>                                        <!--About Us Section Of fotter-->
+<div class="content">
+        <p>
+          We are one of the emerging electronic shops in Canada. Since 2000 we are selling top products in Canada that include Laptops, Phones, and other accessories.
+          To know more about us <a href="About Us.html">click here.</a></p>
+<img src="iconfinder_3_Accessible_logo_logos_4373060.png" alt="Accessibility Logo" style="height: 5%; width: 6%;">
+</div>
+</div>
+<div class="center box">                               <!-- Center column of fotter-->
+      <h2>
+Address</h2>
+<div class="content">
+        <div class="place">
+          
+          <span class="text">Abbotsford,BC,Canada</span> <!--Address of Shop-->
+        </div>
+<div class="phone">
+          
+          <span class="text">+1 (xyz)234-5678</span>
+        </div>
+<div class="email">
+          
+          <span class="text"><a href="mailto:harshsinghbajwa1407@gmail.com">harshsinghbajwa1407@gmail.com</a></span>         <!--Email-->
+        </div>
+</div>
+</div>
+<div class="right box">
+      <h2>
+Contact us</h2>                                         <!--Short Contact Us form-->
+<div class="content">
+        <form action="#">
+          <div class="email">
+            <div class="text">
+Email *</div>
+<input type="email" required>                      <!--Email box-->
+          </div>
+<div class="msg">
+            <div class="text">                        <!--Message-->
+Message *</div>
+<changeit id=".msgForm" rows="2" cols="25" required></changeit> <!-- replace this changeit name to textarea if required -->
+          
+          <br />
+<div class="btn">
+<button type="submit">Send</button>                     <!--Send button-->
+          </div>
+<div class="bottom">                                   <!--Disclaimer-->
+    <center>
+      This is a project of CIS 145 , Web Publishing Course in UFV, Instructed and
+        requested by Professor Lili Saghafi
+        
+    </center>
+</div>
+
+
+</body>
+</html> 
+
+
+
+
